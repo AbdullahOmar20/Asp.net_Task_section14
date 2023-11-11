@@ -1,0 +1,21 @@
+﻿@model StockApp.Models.StockTrade
+@{
+    ViewData["Title"] = "Home Page";
+}
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="box trading-panel">
+        <div class="flex trading-panel-flex">
+            <div id="stock-price-panel">
+                <div class="stock">
+                    <h1 class="stock-title">@Model.StockName (@Model.StockSymbol) </h1>
+                    <small>$</small><span class="stock-price">@Model.Price</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
